@@ -17,32 +17,43 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"/>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
   </head>
 
   <body>
     <header id="hero">
       <nav class="navbar">
         <h1 class="logo">
+          <!-- <a href="#">&nbsp;&lt;Clayton Barnett /&gt;</a> -->
           <a href="#"><i class="fas fa-terminal"></i> &nbsp;Navbar</a>
         </h1>
         <div>
           <!-- Hamburger Links -->
           <ul class="nav-menu">
+            <!-- <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-solid fa-home"></i> Home</a>
+            </li> -->
             <li class="nav-item">
-              <a href="#home-anchor" class="nav-link"
-                ><i class="fas fa-solid fa-home"></i> Home</a>
+              <a href="#about-anchor" class="nav-link">
+                <i class="fas fa-user"></i> About</a>
             </li>
             <li class="nav-item">
-              <a href="#about-anchor" class="nav-link"
-                ><i class="fas fa-user"></i> About</a>
+              <a href="#projects-anchor" class="nav-link">
+                <i class="fas fa-code"></i> Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#contact-anchor" class="nav-link"
-                ><i class="fas fa-address-book"></i> Contact</a>
+              <a href="#skills-anchor" class="nav-link">
+                <i class="fas fa-tools"></i> Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#skills-anchor" class="nav-link"
-                ><i class="fas fa-code"></i> Skills</a>
+              <a href="#education-anchor" class="nav-link">
+                <i class="fas fa-user-graduate"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-anchor" class="nav-link">
+                <i class="fas fa-address-book"></i> Contact</a>
             </li>
           </ul>
          <!-- Hamburger button -->
@@ -84,18 +95,41 @@
                 <li></li>
                 <li></li>
         </ul>
-</div >
+      </div >
+      <div class="custom-shape-divider-bottom-1649965349">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
     </header>
-
     <!-- ? Optional Markup 
    -------------------------------------------------------------------------------
    * This is just to demonstrate how each links moves to each section when clicked
    -------------------------------------------------------------------------------
    -->
-
-    <a class="anchor" name="home-anchor"></a>
-    <section class="content-sections" id="home">
-      <h3>Home <i class="fas fa-home"></i></h3>
+    
+    <a class="anchor" name="about-anchor"></a>
+    <section class="content-sections" id="about">
+      <h3>About <i class="fas fa-user"></i></h3>
+      <p>
+        I'm a CIS graduate that enjoys gaming. I'm also interested in cryptocurrencies, blockchain, and other forms of technology.
+      </p>
+      <p>
+        I know Python, HTML, CSS, and I've created apps with Python TKinter and PyQT5. I'm presently learning JavaScript and honing my existing skills by working on a variety of projects.
+      </p>
+      <p>
+        I enjoy playing video games and spending time with my wife and two dogs in my spare time.
+      </p>
+      <p>
+        I'm actively researching and interested in the following technologies and tools.
+      </p>
+      <p>
+        Python, C#, JavaScript, Vue.js, PHP, Ruby
+      </p>
+    </section>
+    <a class="anchor" name="projects-anchor"></a>
+    <section class="content-sections" id="projects">
+      <h3>Projects <i class="fas fa-code"></i></h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
         earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
@@ -104,9 +138,20 @@
         soluta enim, quisquam molestiae? Inventore, sunt similique.
       </p>
     </section>
-    <a class="anchor" name="about-anchor"></a>
-    <section class="content-sections" id="about">
-      <h3>About <i class="fas fa-user"></i></h3>
+    <a class="anchor" name="skills-anchor"></a>
+    <section class="content-sections" id="skills">
+      <h3>Skills <i class="fas fa-tools"></i></h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
+        earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
+        autem, sint iste sapiente, in corporis ut accusantium aspernatur quam
+        adipisci id perferendis laboriosam quibusdam tempora harum quos eius
+        soluta enim, quisquam molestiae? Inventore, sunt similique.
+      </p>
+    </section>
+    <a class="anchor" name="education-anchor"></a>
+    <section class="content-sections" id="education">
+      <h3>Education <i class="fas fa-user-graduate"></i></h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
         earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
@@ -118,17 +163,6 @@
     <a class="anchor" name="contact-anchor"></a>
     <section class="content-sections" id="contact">
       <h3>Contact <i class="fas fa-address-book"></i></h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
-        earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
-        autem, sint iste sapiente, in corporis ut accusantium aspernatur quam
-        adipisci id perferendis laboriosam quibusdam tempora harum quos eius
-        soluta enim, quisquam molestiae? Inventore, sunt similique.
-      </p>
-    </section>
-    <a class="anchor" name="skills-anchor"></a>
-    <section class="content-sections" id="skills">
-      <h3>Skills <i class="fas fa-code"></i></h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam
         earum incidunt fugiat illo quasi quidem, voluptatem totam repellendus
@@ -158,9 +192,13 @@
 
           <a href="#about-anchor">About</a>
 
-          <a href="#contact-anchor">Contact</a>
+          <a href="#projects-anchor">Projects</a>
 
           <a href="#skills-anchor">Skills</a>
+
+          <a href="#education-anchor">Education</a>
+
+          <a href="#contact-anchor">Contact</a>
         </p>
 
         <p>Handcrafted by Clayton Barnett <i class="far fa-copyright"></i> 2022</p>
