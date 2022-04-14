@@ -381,6 +381,7 @@ a.anchor {
 
   .nav-menu.active {
     right: 0;
+    overflow-y: scroll;
   }
 
   .nav-menu li:first-child {
@@ -541,7 +542,6 @@ a.anchor {
   .content .content-image {
     margin: 0 auto;
     margin-bottom: 3rem;
-    z-index: 1;
   }
 
   .content .content-image img {
@@ -602,7 +602,6 @@ a.anchor {
 
   .content .content-image {
     margin: 0 auto;
-    z-index: 1;
   }
 
   .content .content-image img {
@@ -665,7 +664,6 @@ a.anchor {
 
   .content .content-image {
     margin: 0 auto;
-    z-index: 1;
   }
 
   .content .content-image img {
@@ -727,7 +725,6 @@ a.anchor {
 
   .content .content-image {
     margin: 0 auto;
-    z-index: 1;
   }
 
   .content .content-image img {
@@ -789,7 +786,6 @@ a.anchor {
 
   .content .content-image {
     margin: 0 auto;
-    z-index: 1;
   }
 
   .content .content-image img {
