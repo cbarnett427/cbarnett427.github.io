@@ -147,7 +147,7 @@ a {
 }
 .custom-shape-divider-top-1650317733 {
   position: relative;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -239,19 +239,19 @@ a {
 
 @media (max-width: 400px) {
   .hero {
-    height: 85vh;
+    height: 90vh;
   }
   .circles {
-    height: 79vh;
+    height: 84vh;
 }
   .about {
-    height: 85vh;
+    height: 90vh;
   }
   .skills {
-    height: 85vh;
+    height: 90vh;
   }
   .projects {
-    height: 85vh;
+    height: 90vh;
   }
   .skills-icons {
     display: flex;
@@ -829,7 +829,7 @@ a {
 }
 
 .css-selector {
-  background: linear-gradient(0deg, #5d55fa, #756fe0, #bbb8fe);
+  background: linear-gradient(0deg, #5d55fa, #756fe0, #8c87fb);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 31s ease infinite;
