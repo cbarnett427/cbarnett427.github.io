@@ -1,8 +1,8 @@
-## Personal Porfolio Site
+## My Personal Porfolio Site
 
 Website for my own portfolio. It's on display at: cbarnett427.github.io
 
-## Built with
+## Created using
 
 - HTML
 - CSS
