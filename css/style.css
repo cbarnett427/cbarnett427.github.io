@@ -29,6 +29,12 @@ body {
   font-family: 'Varela Round', Quicksand, Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #fff;
+  position: relative;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* overflow: auto; */
 }
 
 p {
