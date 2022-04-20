@@ -131,6 +131,7 @@ a {
   overflow: hidden;
   line-height: 0;
   fill: var(--bg-primary-color);
+  transform: translateY(2px);
 }
 /* ========== About Section ========== */
 .about {
@@ -140,26 +141,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.custom-shape-divider-top-1650317733 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: translateY(-2px) rotate(180deg);
-}
-
-.custom-shape-divider-top-1650317733 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-top-1650317733 .shape-fill {
-  fill: var(--bg-primary-color);
 }
 
 
