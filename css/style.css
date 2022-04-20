@@ -239,16 +239,19 @@ a {
 
 @media (max-width: 400px) {
   .hero {
-    height: 90vh;
+    height: 85vh;
   }
+  .circles {
+    height: 79vh;
+}
   .about {
-    height: 90vh;
+    height: 85vh;
   }
   .skills {
-    height: 90vh;
+    height: 85vh;
   }
   .projects {
-    height: 90vh;
+    height: 85vh;
   }
   .skills-icons {
     display: flex;
