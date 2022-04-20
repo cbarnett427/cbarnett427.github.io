@@ -31,10 +31,6 @@ body {
   color: #fff;
   position: relative;
   top: 64px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /* overflow: auto; */
 }
 
 p {
@@ -203,7 +199,7 @@ a {
   margin: 1em auto;
 }
 .projects img {
-  max-width:100%;
+  max-width:80%;
   margin: 1em auto;
   display: flex;
   flex-flow: row nowrap;
@@ -895,7 +891,7 @@ fieldset {
     flex-wrap: wrap;
   }
   .skills .item {
-    flex: 50%;
+    flex: 32%;
     padding: 20px;
     width: auto;
     color: var(--text-primary-color);
@@ -906,4 +902,7 @@ fieldset {
     max-width: 50px;
     max-height: 50px;
   }
+  .projects img {
+    max-width: 100%;
+}
 }
