@@ -11,5 +11,5 @@ Website for my own portfolio. It's on display at: cbarnett427.github.io
 
 ## Acknowledgments
 
-* [Google Fonts](https://fonts.google.com/) - Google fonts
+* [Google Fonts](https://fonts.google.com/) - Fonts used
 * [Font Awesome](https://fontawesome.com/?from=io/) - Icons used
