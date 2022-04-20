@@ -11,12 +11,6 @@
   --primary-color: #5d55fa;
   --secondary-color: #4c6ca0;
 }
-/* Classy Pallette
-#5D55FA
-#494554 
-#AEA9BA
-#FF494D
-*/
 
 
 /* Reset */
@@ -74,7 +68,6 @@ a {
   font-weight: normal;
   line-height: 1.5;
   margin: 0 auto;
-  /* margin-bottom: 1.5rem; */
 }
 
 .container {
@@ -133,6 +126,8 @@ a {
   fill: var(--bg-primary-color);
   transform: translateY(2px);
 }
+
+
 /* ========== About Section ========== */
 .about {
   position: relative;
@@ -165,7 +160,6 @@ a {
   flex: 33.33%;
   padding: 20px;
   width: auto;
-  /* flex: 1; */
   color: var(--text-primary-color);
 }
 .skills-icons img {
@@ -757,13 +751,13 @@ a {
     height: 84vh;
 }
   .about {
-    height: 100vh;
+    height: 90vh;
   }
   .skills {
-    height: 100vh;
+    height: 90vh;
   }
   .projects {
-    height: 100vh;
+    height: 90vh;
   }
   .skills-icons {
     display: flex;
@@ -775,7 +769,6 @@ a {
     flex: 50%;
     padding: 20px;
     width: auto;
-    /* flex: 1; */
     color: var(--text-primary-color);
   }
   .skills-icons img {
