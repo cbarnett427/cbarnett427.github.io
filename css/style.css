@@ -205,28 +205,6 @@ a {
   max-height: 90px;
 }
 
-@media (max-width: 400px) {
-  .skills-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .skills .item {
-    flex: 50%;
-    padding: 20px;
-    width: auto;
-    /* flex: 1; */
-    color: var(--text-primary-color);
-  }
-  .skills-icons img {
-    margin: auto;
-    display: block;
-    max-width: 50px;
-    max-height: 50px;
-  }
-}
-
 
 /* ========== Projects Section ========== */
 .projects {
@@ -259,7 +237,39 @@ a {
 }
 
 
-
+@media (max-width: 400px) {
+  .hero {
+    height: 90vh;
+  }
+  .about {
+    height: 90vh;
+  }
+  .skills {
+    height: 90vh;
+  }
+  .projects {
+    height: 90vh;
+  }
+  .skills-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .skills .item {
+    flex: 50%;
+    padding: 20px;
+    width: auto;
+    /* flex: 1; */
+    color: var(--text-primary-color);
+  }
+  .skills-icons img {
+    margin: auto;
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
 
 
 
