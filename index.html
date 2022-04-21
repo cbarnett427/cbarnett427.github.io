@@ -11,6 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="/img/favicon1.svg" />
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/script.js" async></script>
+  <script src="/js/onscroll.js" async></script>
 
   <!-- External Links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -20,18 +21,17 @@
 
 <body id="home">
   <header>
-    <nav class="navbar">
-      <h1 class="logo">
-        <a href="#">&lt;Clay/&gt;</a>
-      </h1>
-      <div>
+    <nav class="navbar" id="navbar">
+      <h1><a href="#" id="logo">&lt;Clay/&gt;</a></h1>
+      <div class="">
         <!-- Hamburger Links -->
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <ul class="nav-menu" id="nav-menu">
+          <h1><a href="#" id="logo">&lt;Clay/&gt;</a></h1>
+          <li class="nav-item"><a href="#" class="active nav-link" id="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" id="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link" id="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" id="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link">Contact</a></li>
         </ul>
         <!-- Hamburger button -->
         <div class="hamburger">
@@ -42,7 +42,7 @@
       </div>
     </nav>
 
-    <section class="section hero css-selector">
+    <section class="section hero">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -150,7 +150,7 @@
       <form id="contact-form" action="" method="post">
         <h3>Get In Touch</h3>
         <fieldset>
-          <input placeholder="Full Name" type="text" tabindex="1" required autofocus>
+          <input placeholder="Full Name" type="text" tabindex="1" required>
         </fieldset>
         <fieldset>
           <input placeholder="Email Address" type="email" tabindex="2" required>
