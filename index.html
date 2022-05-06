@@ -2,199 +2,136 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clayton Barnett | Developer</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Clayton Barnett | Developer</title>
 
-  <!-- Internal Links -->
-  <link rel="icon" type="image/svg+xml" href="/img/favicon1.svg" />
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/script.js" async></script>
-  <script src="/js/onscroll.js" async></script>
+   <!-- Internal Links -->
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/img/favicon/site.webmanifest">
+   <script src="script.js" async></script>
 
-  <!-- External Links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
+   <!-- External Links -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-
-<body id="home">
-  <header>
-    <nav class="navbar" id="navbar">
-      <h1><a href="#" id="logo">&lt;Clay/&gt;</a></h1>
-      <div class="">
-        <!-- Hamburger Links -->
-        <ul class="nav-menu" id="nav-menu">
-          <h1><a href="#" id="logo">&lt;Clay/&gt;</a></h1>
-          <li class="nav-item"><a href="#" class="active nav-link" id="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link" id="nav-link">About</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link" id="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link" id="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link">Contact</a></li>
-        </ul>
-        <!-- Hamburger button -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+<body id="body">
+   <!-- ====== Navbar Section ====== -->
+   <nav class="navbar">
+      <h1 class="logo">
+         <a href="#">&lt;Clay/&gt;</a>
+      </h1>
+      <div>
+         <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->
+         </ul>
+         <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
       </div>
-    </nav>
+   </nav>
 
-    <section class="section hero">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div class="hero-content container">
-        <h1 class="hero-title"> Open Source Developer, Data Scientist &amp; Programmer </h1>
-        <h2 class="hero-subtitle"> I love what I do, and I design and code beautiful, simple things. </h2>
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="A portrait of Clayton Barnett">
-        <!-- <button type="button" class="hero-button" role="button">Contact</button> -->
-      </div>
-      <div class="hero-foot">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"></path>
-        </svg>
-      </div>
-    </section>
-  </header>
+   <!-- ====== Hero Section ====== -->
+   <section class="hero" id="hero">
 
+      <div class="hero-content">
+      
+         <h1 class="hero-title">
+            Open Source Developer, Data Scientist & Programmer
+         </h1>
+           
+         <h2 class="hero-subtitle">
+            I love what I do, and I design and code beautiful, simple things.
+         </h2>
 
-  <section class="section about has-text-centered" id="about">
-    <div class="about-content container">
-      <h1 class="title" id="about-title">Hi, I’m Clayton. Nice to meet you!</h1>
-      <h2 class="subtitle" id="about-subtitle">
-        I'm a CIS graduate that enjoys playing video games and spending time with my wife and two dogs in my leisure time. I'm also interested in cryptocurrency, blockchain, and other forms of technology.
-      </h2>
-    </div>
-  </section>
-
-  <section class="section skills has-text-centered" id="skills">
-    <div class="skills-content container">
-      <h1 class="title" id="skills-title">My Skills</h1>
-      <div class="skills-icons">
-        <div class="item"><img src="/img/html5.svg">HTML</div>
-        <div class="item"><img src="/img/css3.svg">CSS</div>
-        <div class="item"><img src="/img/javascript.svg">JavaScript</div>
-        <div class="item"><img src="/img/git.svg">Git</div>
-        <div class="item"><img src="/img/bootstrap.svg">Bootstrap</div>
-        <div class="item"><img src="/img/mysql.svg">MySQL</div>
-        <div class="item"><img src="/img/python.svg">Python</div>
-        <div class="item"><img src="/img/csharp.svg">C#</div>
-        <div class="item"><img src="/img/linux.svg">Linux</div>
+         <a href="#projects">
+            <input type="button" class="hero-button" value="My Projects"/>
+         </a>
+                
       </div>
-    </div>
-    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28 " preserveAspectRatio="none">
-    <defs>
-      <path id="gentle-wave" d="M-160 44c30 0 
-      58-18 88-18s
-      58 18 88 18 
-      58-18 88-18 
-      58 18 88 18
-      v44h-352z" />
-    </defs>
-    <!-- <g class="parallax1">
-      <use xlink:href="#gentle-wave" x="50" y="3" fill="#FFC655" />
-    </g> -->
-    <g class="parallax2">
-      <use xlink:href="#gentle-wave" x="50" y="0" fill="#FFC655" />
-    </g>
-    <g class="parallax3">
-      <use xlink:href="#gentle-wave" x="50" y="9" fill="#484554" />
-    </g>
-    <g class="parallax4">
-      <use xlink:href="#gentle-wave" x="50" y="6" fill="#6c63ff" />
-    </g>
-  </svg>
-  </section>
-
-  <section class="section projects has-text-centered" id="projects">
-    <div class="project-content container">
-      <h1 class="title" id="projects-title">Featured Projects</h1>
-      <h2 class="subtitle" id="projects-subtitle">Quibble Web Browser</h2>
-      <div class="projects-info">
-        <div class="project-stack">
-          <small class="language">Python |</small>
-          <small class="language">HTML5 |</small>
-          <small class="language">CSS</small>
-        </div>
-        <div class="projects-links">
-          <a href="https://github.com/cbarnett427/Quibble-Web-Browser"
-            target="_blank"><i class="fab fa-github fa-lg"></i></a>
-        </div>
-      </div>
-      <p>
-        This is a Python-based web browser. It also includes a landing page and a new tab page, as well as the easylist adblocker. 
-      </p>
-      <div class="projects-image">
-        <img src="./img/projects/Quibble.PNG" alt="Quibble Web Browser"/>
-      </div>
-    </div>
-  </section>
   
-  <section class="section contact has-text-centered" id="contact">
-    <div class="contact-content container"> 
-      <h1 class="title" id="contact-title">Contact Info</h1> 
-      <form id="contact-form" action="" method="post">
-        <h3>Get In Touch</h3>
-        <fieldset>
-          <input placeholder="Full Name" type="text" tabindex="1" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-    <div class="contact-foot">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-    </div>
-  </section>
-  <!-- =========== FOOTER ============= -->
-  <footer class="footer-distributed">
-    <div class="footer-right">
+   </section>
+   <!-- <div class="hero" id="hero">
+      <div class="hero-overlay">
+        <h1>Hi, I’m Clayton.</h1>
+        <h2>Open Source Developer, Data Scientist & Programmer </h2>
+        <img class="hero-profile" src="https://avatars.githubusercontent.com/u/54959662?v=4" alt="A portrait of Clayton Barnett">
+      </div>
+      <img src="/img/gradient.svg" alt="This is not the wallpaper you're looking for." class="hero-image">
+    </div> -->
+
+    <!-- ====== About Section ====== -->
+    <section id="about">
+      <div class="about" id="about">
+         <h2>About Me</h2>
+         <p>I'm a CIS graduate that enjoys playing video games and spending time with my wife and two dogs in my leisure time. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+   </section>
+
+   <!-- ====== Skills Section ====== -->
+   <section id="skills">
+      <div class="skills" id="skills">
+         <h2>My Skills</h2>
+         <!-- <p>I'm a CIS graduate that enjoys playing video games and spending time with my wife and two dogs in my leisure time. I'm also interested in cryptocurrency, blockchain, and other forms of technology.</p> -->
+         <div class="flex-skills">
+            <div class="flex-item"><img src="/img/languages/html5.svg">HTML</div>
+            <div class="flex-item"><img src="/img/languages/css3.svg">CSS</div>
+            <div class="flex-item"><img src="/img/languages/javascript.svg">JavaScript</div>
+            <div class="flex-item"><img src="/img/languages/git.svg">Git</div>
+            <div class="flex-item"><img src="/img/languages/bootstrap.svg">Bootstrap</div>
+            <div class="flex-item"><img src="/img/languages/mysql.svg">MySQL</div>
+            <div class="flex-item"><img src="/img/languages/python.svg">Python</div>
+            <div class="flex-item"><img src="/img/languages/csharp.svg">C#</div>
+            <div class="flex-item"><img src="/img/languages/linux.svg">Linux</div>
+         </div>
+      </div>
+   </section>
+   <!-- ====== Projects Section ====== -->
+   <section id="projects">
+      <div class="projects" id="projects">
+         <h2>Featured Projects</h2>
+         <h3>Quibble Web Browser</h3>
+         <p class="languages"><small>Python | HTML5 | CSS</small></p>
+         <div class="project-link">
+            <a href="https://github.com/cbarnett427/Quibble-Web-Browser" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+         </div>
+         <p>This is a Python-based web browser. It also includes a landing page and a new tab page, as well as the easylist adblocker.</p>
+         <img src="/img/projects/Quibble.PNG" alt="This is not the wallpaper you're looking for.">
+      </div>
+   </section>
+   <!-- =========== FOOTER ============= -->
+   <footer class="footer-distributed">
+      <div class="footer-right">
       <a href="#"><i class="fas fa-chevron-up"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/clayton-barnett2020/"><i class="fab fa-linkedin-in"></i></a>
       <a target="_blank" href="https://github.com/cbarnett427"><i class="fab fa-github"></i></a>
-    </div>
+      </div>
 
-    <div class="footer-left">
+      <div class="footer-left">
       <p class="footer-links">
-        <a class="link-1" href="#">Home</a>
+         <a class="link-1" href="#">Home</a>
 
-        <a href="#about">About</a>
+         <a href="#about">About</a>
 
-        <a href="#skills">Skills</a>
+         <a href="#skills">Skills</a>
 
-        <a href="#projects">Projects</a>
+         <a href="#projects">Projects</a>
 
-        <!-- <a href="#contact-anchor">Contact</a> -->
+         <!-- <a href="#contact-anchor">Contact</a> -->
       </p>
 
-      <p>Handcrafted by Clayton Barnett <i class="far fa-copyright"></i> 2022</p>
-    </div>
-  </footer>
-  
+      <p class="footer-copyright">Handcrafted by Clayton Barnett <i class="far fa-copyright"></i> 2022</p>
+      </div>
+   </footer>
 </body>
-
 </html>
