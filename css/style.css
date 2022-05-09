@@ -116,6 +116,11 @@ a {
 
 /* ========== Hero Section ========== */
 .hero {
+  background: rgb(255,198,85);
+  background: -moz-linear-gradient(180deg, rgba(255,198,85,1) 0%, rgba(99,99,255,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,198,85,1) 0%, rgba(99,99,255,1) 100%);
+  background: linear-gradient(180deg, rgba(255,198,85,1) 0%, rgba(99,99,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc655",endColorstr="#6363ff",GradientType=1); 
   position: relative;
   width: 100%;
   height: 100vh;
@@ -123,7 +128,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -135,7 +140,7 @@ a {
   background-size: cover;
   background-position: center center;
   filter: brightness(100%);
-}
+} */
 .hero-content {
   position: relative;
   color: white;
@@ -171,10 +176,17 @@ div, p {
   text-rendering: optimizeLegibility;
 }
 
+.dotbackground {
+  background-color:transparent;
+  fill:rgb(108,99,255);
+  background-size:157px 157px;
+  background-repeat:repeat;
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='0.08' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st0{fill:rgb(108,99,255)} %3C/style%3E%3Ccircle class='st0' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='336.6' r='12.7'/%3E%3Cg%3E%3Ccircle class='st0' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='.7' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='419.5' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='500.7' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='170.9' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='253.8' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='88' r='12.7'/%3E%3C/g%3E%3C/svg%3E");
+}
 
 /* ========== About Section ========== */
 .about {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -197,11 +209,31 @@ div, p {
   letter-spacing: 0.05rem;
   line-height: 1.5;
 }
+.custom-shape-divider-top-1652122962 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.custom-shape-divider-top-1652122962 svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 300px;
+  background-image: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+.custom-shape-divider-top-1652122962 .shape-fill {
+  fill: #6363FF;
+}
 
 /* ========== Skills Section ========== */
 .skills {
-  background-color: #f4f4f4;
+  background-image: linear-gradient(to bottom, transparent, #ffffff);
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -257,12 +289,54 @@ div, p {
     max-height: 50px;
   }
 }
+.custom-shape-divider-bottom-1652124388 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1652124388 svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 300px;
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+
+.custom-shape-divider-bottom-1652124388 .shape-fill {
+  fill: #6363FF;
+}
+.custom-shape-divider-top-1652124447 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1652124447 svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 300px;
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+
+.custom-shape-divider-top-1652124447 .shape-fill {
+  fill: #6363FF;
+}
 
 .education {
-  background-color: #f4f4f4;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  background-color: #6363ff;
+  /* padding-top: 10%; */
+  padding-bottom: 1%;
 }
 
 .education h2 {
@@ -272,7 +346,7 @@ div, p {
   z-index: 0;
   width: 100%;
   font-size: clamp(1.6rem, 8vw - 2rem, 2rem);
-  color: #3b3b3b;
+  color: #fff;
   padding: 3rem 0 0 0;
   letter-spacing: 0.25rem;
   font-weight: 700;
@@ -310,10 +384,14 @@ div, p {
 }
 
 .card-title {
+  color: #3b3b3b;
   font-size: 18px;
   text-align: left;
   font-weight: bold;
   padding-left: 10px;
+}
+.card h4 {
+  color: #3b3b3b;
 }
 
 .card-desc {
@@ -324,6 +402,7 @@ div, p {
 
 .card img {
   width: auto;
+  border-radius: 4px;
 }
 
 /* Phone Devices Query */
@@ -348,7 +427,8 @@ div, p {
 
 /* ========== Projects Section ========== */
 .projects {
-  background-color: #f4f4f4;
+  background-image: linear-gradient(to top, transparent, #ffffff);
+  /* background-color: #fff; */
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -504,7 +584,7 @@ div, p {
 
 /* ========== Footer Section ========== */
 .footer-distributed {
-  background-color: #292c2f;
+  background-color: #6C63FF;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -514,7 +594,7 @@ div, p {
 }
 
 .footer-distributed .footer-left .footer-copyright {
-  color: #8f9296;
+  color: #fff;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -524,7 +604,7 @@ div, p {
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   margin: 0 0 10px;
   padding: 0;
   transition: ease .25s;
@@ -561,7 +641,7 @@ div, p {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: #33383b;
+  background-color: #9696ff;
   border-radius: 2px;
   font-size: 20px;
   color: #ffffff;
