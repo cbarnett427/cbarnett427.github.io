@@ -46,7 +46,7 @@ a {
   height: 64px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 19%;
+  padding: 0 20vw;
   flex-wrap: wrap;
   z-index: 1;
   flex-direction: row;
@@ -203,11 +203,12 @@ div, p {
   font-weight: 700;
 }
 .about p {
-  max-width: 70vw;
+  /* max-width: 70vw; */
   margin: 0 auto;
-  padding: 3rem;
+  padding: 3rem 20vw;
   letter-spacing: 0.05rem;
   line-height: 1.5;
+  
 }
 .custom-shape-divider-top-1652122962 {
   position: relative;
@@ -261,15 +262,24 @@ div, p {
   flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
+  justify-content: center;
   margin: 0 auto;
-  padding: 2rem 20vw;
+  padding: 3rem 20vw;
 }
 
 .flex-item {
+  max-width: 100px;
+  height: 125px;
+  max-height: 125px;
+  margin: auto;
   padding: 10px;
+  justify-content: center;
   flex: 32%;
   color: #333;
   font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 4px;
 }
 
 .flex-item img {
@@ -283,6 +293,10 @@ div, p {
 @media (max-width: 800px) {
   .flex-item {
     flex: 50%;
+    height: 90px;
+    margin: 1rem auto;
+    padding: 10px;
+    justify-content: center;
   }
   .flex-item img {
     max-width: 50px;
@@ -553,9 +567,8 @@ div, p {
     transform: translateY(-8px) rotate(-45deg);
   }
   /* About */
-  .about p {
-    max-width: 90vw;
-  }
+  /* .about p {
+  } */
   /* Projects */
   .projects img {
     max-width: 90%;
