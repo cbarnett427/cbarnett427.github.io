@@ -8,8 +8,8 @@
   --text-primary: #3b3b3b;
   --text-secondary: #ffffff;
   --bg-primary-color:#ffffff;
-  --bg-secondary-color:#3b3b3b;
-  --bg-fill-color:#ffffff;
+  --bg-secondary-color:#ffffff;
+  --bg-fill-color:#cccccc;
   --primary-color: rgb(108,99,255);
   --secondary-color: rgb(255,198,85);
 }
@@ -18,9 +18,9 @@
 :root[color-mode="dark"] {
   --text-primary: #ffffff;
   --text-secondary: #3b3b3b;
-  --bg-primary-color:#2A272A;
-  --bg-secondary-color:#4B4A54;
-  --bg-fill-color:#4B4A54;
+  --bg-primary-color:#202020;
+  --bg-secondary-color:#393939;
+  --bg-fill-color:#202020;
   --primary-color: rgb(108,99,255);
   --secondary-color: rgb(255,198,85);
 }
@@ -37,10 +37,9 @@ html {
 }
 
 /* Main Styling */
-/* body {
-  margin-top: 64px;
-} */
-
+body {
+  transition: color 0.6s;
+}
 i {
   display: inline;
 }
@@ -52,6 +51,12 @@ ul {
 a {
   text-decoration: none;
   color: #333;
+}
+h1, h2, h3, h4, h5 {
+  transition: color 0.6s;
+}
+p {
+  transition: color 0.6s;
 }
 
 
@@ -70,6 +75,7 @@ a {
   flex-direction: row;
   background-color: var(--bg-primary-color);
   box-shadow: rgba(12, 12, 12, 0.1) 1px 3px 5px;
+  transition: background 0.4s;
 }
 
 .navbar .logo {
@@ -131,6 +137,58 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: var(--text-primary);
 }
+/* .switch {
+  margin-left: 43% !important;
+} */
+
+.theme-switch {
+  display: flex;
+  height: 30px;
+  position: relative;
+  width: 56px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: var(--bg-fill-color);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 22px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 22px;
+}
+
+input:checked + .slider {
+  background-color: var(--bg-secondary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 
 /* ========== Hero Section ========== */
@@ -157,15 +215,17 @@ a {
   font-size: clamp(1.9rem, 8vw - 2rem, 3rem);
   font-weight: 600;
   margin-bottom: 0;
+  color: var(--text-secondary);
 }
 .hero-subtitle {
   font-size: clamp(1.4rem, 8vw - 2rem, 2rem);
   font-weight: 200;
   margin-top: 1rem;
+  color: var(--text-secondary);
 }
 .hero-button {
   background-color: #F6C05E;
-  color: white;
+  color: var(--text-secondary);
   border: 1px solid #F6C05E;
   border-radius: 5px;
   margin-top: 2rem;
@@ -173,6 +233,7 @@ a {
   font-size: 1.125rem;
   font-weight: 300;
   cursor: pointer;
+  transition: color 0.6s;
 }
 .hero-button:hover {
   background-color: #ffc655;
@@ -183,11 +244,11 @@ div, p {
 }
 
 .dotbackground {
-  background-color: var(--bg-fill-color);
+  background-color: var(--bg-secondary-color);
   fill:rgb(108,99,255);
   background-size:157px 157px;
   background-repeat:repeat;
-  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='0.08' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st0{fill:rgb(108,99,255)} %3C/style%3E%3Ccircle class='st0' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='336.6' r='12.7'/%3E%3Cg%3E%3Ccircle class='st0' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='.7' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='419.5' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='500.7' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='170.9' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='253.8' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='88' r='12.7'/%3E%3C/g%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='0.1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st0{fill:rgb(108,99,255)} %3C/style%3E%3Ccircle class='st0' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='336.6' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='336.6' r='12.7'/%3E%3Cg%3E%3Ccircle class='st0' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='.7' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='.7' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='419.5' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='419.5' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='500.7' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='500.7' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='170.9' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='170.9' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='253.8' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='253.8' r='12.7'/%3E%3C/g%3E%3Cg%3E%3Ccircle class='st0' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='83.3' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='166.7' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='250' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='333.3' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='416.7' cy='88' r='12.7'/%3E%3Ccircle class='st0' cx='500' cy='88' r='12.7'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ========== About Section ========== */
@@ -232,7 +293,7 @@ div, p {
   display: block;
   width: calc(120% + 1.3px);
   height: 300px;
-  background-image: linear-gradient(to bottom, transparent, var(--bg-fill-color));
+  background-image: linear-gradient(to bottom, transparent, var(--bg-secondary-color));
 }
 
 .custom-shape-divider-top-1652122962 .shape-fill {
@@ -241,7 +302,7 @@ div, p {
 
 /* ========== Skills Section ========== */
 .skills {
-  background-image: linear-gradient(to bottom, transparent, var(--bg-fill-color));
+  background-image: linear-gradient(to bottom, transparent, var(--bg-secondary-color));
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -328,7 +389,7 @@ div, p {
   width: calc(120% + 1.3px);
   height: 300px;
   transform: rotateY(180deg);
-  background-color: var(--bg-fill-color);
+  background-color: var(--bg-secondary-color);
 }
 
 .custom-shape-divider-bottom-1652124388 .shape-fill {
@@ -349,7 +410,7 @@ div, p {
   width: calc(120% + 1.3px);
   height: 300px;
   transform: rotateY(180deg);
-  background-color: var(--bg-fill-color);
+  background-color: var(--bg-secondary-color);
 }
 
 .custom-shape-divider-top-1652124447 .shape-fill {
@@ -450,7 +511,7 @@ div, p {
 
 /* ========== Projects Section ========== */
 .projects {
-  background-image: linear-gradient(to top, transparent, var(--bg-fill-color));
+  background-image: linear-gradient(to top, transparent, var(--bg-secondary-color));
   /* background-color: #fff; */
   padding-top: 10%;
   padding-bottom: 10%;
@@ -559,6 +620,13 @@ div, p {
     color: rgb(108,99,255);
   }
 
+  .switch {
+    margin-left: 43% !important;
+  }
+  input:checked + .slider {
+    background-color: var(--bg-fill-color);
+  }
+
   .hamburger {
     display: block;
     cursor: pointer;
@@ -575,9 +643,6 @@ div, p {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  /* About */
-  /* .about p {
-  } */
   /* Skills */
   .flex-skills {
     max-width: 100vw;
