@@ -802,6 +802,9 @@ div, p {
 }
 
 @media only screen and (max-width: 920px) {
+  .navbar {
+    background-color: var(--bg-primary-color);
+  }
 	.navbar ul {
 		position: fixed;
 		top: 64px;
